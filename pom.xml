@@ -8,6 +8,13 @@
     <artifactId>ingresso</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+    
+    <developers>
+		<developer>
+			<name>Lucas Rocha</name>
+			<email>rocha.lucasrocha85@gmail.com</email>
+		</developer>
+	</developers>
 
 
     <properties>
