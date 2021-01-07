@@ -41,10 +41,17 @@ public class Sala {
 
     }
 
-    public Sala(String nome, BigDecimal preco) {
+//    public Sala(String nome, BigDecimal preco) {
+//        this.nome = nome;
+//        this.preco = preco;
+//    }
+    public Sala(String nome) {
         this.nome = nome;
-        this.preco = preco;
     }
+    
+    
+    
+    
 
     public BigDecimal getPreco() {
     	return preco.setScale(2, RoundingMode.HALF_UP);
