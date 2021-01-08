@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-//@Entity
+@Entity
 public class Sessao {
 	
 	@Id
@@ -57,6 +57,14 @@ public class Sessao {
 
 	public Filme getFilme() {
 		return filme;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public void setFilme(Filme filme) {
