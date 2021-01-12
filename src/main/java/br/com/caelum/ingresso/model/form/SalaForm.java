@@ -14,7 +14,7 @@ import br.com.caelum.ingresso.model.Sala;
 
 public class SalaForm {
 	
-//	@NotNull
+	@NotNull
 	private BigDecimal preco;
 		
     private Integer salaId;
@@ -58,17 +58,19 @@ public class SalaForm {
         this.lugares = lugares;
     }
 
-//    public Sala toSala() {
-//        Sala sala = new Sala(this.nome, this.preco);
-//        sala.setId(this.salaId);
-//        sala.setLugares(new HashSet<>(this.lugares));
-//        return sala;
-//    }
     public Sala toSala() {
-        Sala sala = new Sala(this.nome);
+        Sala sala = new Sala(this.nome, this.preco);
         sala.setId(this.salaId);
         sala.setLugares(new HashSet<>(this.lugares));
         return sala;
     }
+
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
 
 }
