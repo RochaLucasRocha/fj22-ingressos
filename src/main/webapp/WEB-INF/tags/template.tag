@@ -25,8 +25,7 @@
 				</button>
 				<a class="navbar-brand" href="/">Ingresso</a>
 			</div>
-
-
+			
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -34,7 +33,7 @@
 
 					<li><a href="/admin/filmes">Filmes</a></li>
 					<li><a href="/admin/salas">Salas</a></li>
-			<!--		<li><a href="/filme/em-cartaz">Comprar</a></li>		-->																					
+					<li><a href="/filme/em-cartaz">Comprar</a></li>																							
 
 					<sec:authorize access="!isAuthenticated()">
 						<li><a href="/login">Login</a></li>
